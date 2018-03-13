@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>MOD / TRABAJOS</title>
+        <link href="images/favico-mod.jpg" rel="shortcut icon">
+        <link href="css/estilosmenu.css" rel="stylesheet">
+        <link href="css/trabajosslider.css" rel="stylesheet">
+        <link href="css/estilostrabajos.css" rel="stylesheet">
+    </head>
+
+        <body>
+
+                <nav>
+                        <div class="logonav" onMouseOver="cambiarlogonav();" onMouseOut="volverlogonav();">
+                            <a href="index.html">
+                            <img src="images/logo-mod-nav.jpg" id="logonav" alt="Ir a la home">
+                            </a>
+                        </div>
+        
+                        <div class="menunav" id="ocultar" onMouseOver="cambiarmenunav();" onMouseOut="volvermenunav();">
+                        <img src="images/menu-nav.jpg" id="menunav" alt="Desplegar menú">
+                    
+                        <div id="caja">
+                            <a href="quiensoy.html">¿QUIÉN SOY?</a>
+                            <a href="trabajos.html">TRABAJOS / DISEÑOS</a>
+                            <a href="graficaeventos.html">GRÁFICA EVENTOS</a>
+                        </div>
+        
+                        </div>
+                    </nav>
+            <nav>
+                <h2>DISEÑO GRÁFICO</h2>
+                <h2>DISEÑO EDITORIAL</h2>
+                <h2>DISEÑO WEB</h2>
+            </nav>
+
+            <main>
+            <div class="flexslider">
+                <ul class="slides">
+                        <li><img src="images/trabajos/dg1.jpg" alt="Diseño Gráfico"/></li>
+                        <li><img src="images/trabajos/dg2.jpg" alt="Diseño Gráfico"/></li>
+                        <li><img src="images/trabajos/dg3.jpg" alt="Diseño Gráfico"/></li>
+                        <li><img src="images/trabajos/dg4.jpg" alt="Diseño Gráfico"/></li>
+                        <li><img src="images/trabajos/dg5.jpg" alt="Diseño Gráfico"/></li>
+
+                        <li><img src="images/trabajos/editorial1.jpg" alt="Diseño Editorial"/></li>
+                        <li><img src="images/trabajos/editorial2.jpg" alt="Diseño Editorial"/></li>
+                        <li><img src="images/trabajos/editorial3.jpg" alt="Diseño Editorial"/></li>
+                        <li><img src="images/trabajos/editorial4.jpg" alt="Diseño Editorial"/></li>
+                        <li><img src="images/trabajos/editorial5.jpg" alt="Diseño Editorial"/></li>
+                        <li><img src="images/trabajos/editorial6.jpg" alt="Diseño Editorial"/></li>
+                        <li><img src="images/trabajos/editorial7.jpg" alt="Diseño Editorial"/></li>
+
+                        <li><img src="images/trabajos/web1.jpg" alt="Diseño Web"/></li>
+                        <li><img src="images/trabajos/web2.jpg" alt="Diseño Web"/></li>
+                        <li><img src="images/trabajos/web3.jpg" alt="Diseño Web"/></li>
+                        <li><img src="images/trabajos/web4.jpg" alt="Diseño Web"/></li>
+                        <li><img src="images/trabajos/web5.jpg" alt="Diseño Web"/></li>
+                        <li><img src="images/trabajos/web6.jpg" alt="Diseño Web"/></li>
+                </ul>
+            </div>
+
+            <section class="descripcion">
+                <h2>FUNDACIÓN CIUDAD</h2>
+                <h3>DISEÑO DE IDENTIDAD /<br>DISEÑO GRÁFICO</h3>
+                <p>Proyecto realizado para la UBA.<br>
+                Diseño de identidad gráfica para la
+                Fundación Ciudad, una fundación dedicada
+                a la práctica y resolución referida a
+                las problemáticas medioambientales.</p>
+
+            </section>
+            </main>
+
+            <section class="pie">
+                    <div class="mod" onMouseOver="cambiarmodpie();" onMouseOut="volvermodpie();">
+                    <a href="index.html">
+                        <img src="images/logo-mod-pie.jpg" id="modpie" alt="Ir a la home">
+                    </a>
+                    </div> <!-- Cierra .mod -->
+        
+                    <ul class="links">
+                        <li><a href="quiensoy.html">¿QUIÉN <br>SOY?</a></li>
+                        <li><a href="trabajos.html">TRABAJOS /<br>DISEÑOS</a></li>
+                        <li><a href="graficaeventos.html">GRÁFICA<br>EVENTOS</a></li>
+                    </ul> <!-- Cierra .links -->
+                    
+                    <div class="redes">
+                        <div class="facebook" onMouseOver="cambiarface();" onMouseOut="volverface();">
+                        <a href="https://www.facebook.com/">
+                            <img src="images/facebookmod.jpg" id="face" alt="Ir a Facebook MOD">
+                        </a>
+                        </div>
+                        <div class="instagram" onMouseOver="cambiarinsta();" onMouseOut="volverinsta();">
+                        <a href="https://www.instagram.com/">
+                            <img src="images/instagrammod.jpg" id="insta" alt="Ir a Instagram MOD">
+                        </a>
+                        </div>
+                    </div> <!-- Cierra .redes -->
+        
+                </section> <!-- Cierra .pie -->
+    
+            <script type="text/javascript">
+    
+                function cambiarface () {
+                 document.getElementById('face').src = "images/facebookmodover.jpg";
+                }
+                function volverface () {
+                 document.getElementById('face').src = "images/facebookmod.jpg";
+                }
+    
+                function cambiarinsta () {
+                 document.getElementById('insta').src = "images/instagrammodover.jpg";
+                }
+                function volverinsta () {
+                 document.getElementById('insta').src = "images/instagrammod.jpg";
+                }
+    
+                function cambiarmodpie () {
+                 document.getElementById('modpie').src = "images/logo-mod-pie-over.jpg";
+                }
+                function volvermodpie () {
+                 document.getElementById('modpie').src = "images/logo-mod-pie.jpg";
+                }
+                
+               </script>
+    
+            <script src="js/jquery.min.js"></script>
+    
+            <script src="js/jquery.flexslider.js"></script>
+    
+            <script>
+                $(window).load(function() {
+                $('.flexslider').flexslider({
+                animation: "slide",
+                });
+            });
+            </script>
+        </body>
+</html>

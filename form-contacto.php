@@ -1,35 +1,22 @@
-<!doctype html>
+// form-contacto.php
+
+    
+    <!doctype html>
 <html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <title>MOD</title>
         <link href="css/estilosmod.css" rel="stylesheet">
-        <link href="css/estilosmenu.css" rel="stylesheet">
         <link href="images/favico-mod.jpg" rel="shortcut icon">
     </head>
 
     <body>
         <header>
             <nav>
-                <div class="logonav" onMouseOver="cambiarlogonav();" onMouseOut="volverlogonav();">
-                    <a href="index.html">
-                    <img src="images/logo-mod-nav.jpg" id="logonav" alt="Ir a la home">
-                    </a>
-                </div>
 
-                <div class="menunav" id="ocultar" onMouseOver="cambiarmenunav();" onMouseOut="volvermenunav();">
-                <img src="images/menu-nav.jpg" id="menunav" alt="Desplegar menú">
-            
-                <div id="caja">
-                    <a href="quiensoy.html">¿QUIÉN SOY?</a>
-                    <a href="trabajos.html">TRABAJOS / DISEÑOS</a>
-                    <a href="graficaeventos.html">GRÁFICA EVENTOS</a>
-                </div>
-
-                </div>
             </nav>
-    
+
             <div class="cabecera">
                 <div class="logo" onMouseOver="cambiar();" onMouseOut="volver();">
                     <img src="images/logo-mod.png" id="logo" alt="Ir a la home">
@@ -64,31 +51,32 @@
         </div> <!-- Cierra .contenedor -->
         </main>
 
+<!--  .................................. PHP ..................................  -->
+
         <section class="contacto">
-                <form action="form-contacto.php" method="post">
-                    <div class="datos">
-                        <h1>CONTACTO</h1>
 
-                        <h2>NOMBRES</h2>
-                        <input type="text" name="nombre"><br>
+        <?php
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+		$email = $_POST['email'];
+		$comentario = $_POST['comentario'];
+		
+		$destinatario = "rodrigo1991@hotmail.com, sopa1988@gmail.com";
+		
+		$asunto = "Formulario desde web";
 
-                        <h2>APELLIDO</h2>
-                        <input type="text" name="apellido"><br>
-
-                        <h2>EMAIL</h2>
-
-                    <input type="email" id="email" name="email"><br>
-                    <br><br>
-                    </div> <!-- Cierra .datos -->
-
-                    <div class="comentarios">
-                    <h2>COMENTARIOS</h2>
-                    <textarea name="comentario"></textarea>
-                        <input type="submit" class="boton" value="ENVIAR">
-                    </div> <!-- Cierra .comentarios -->
-                </form>
+		$cuerpo = "$nombre te envío el formulario, contactalo a su mail $email. Su mensaje es: $comentario ";
+		
+		$cabeceras = "From: Nombre <mod@grafica.com>";
+		
+		mail($destinatario, $asunto, $cuerpo, $cabeceras);
+        
+        echo '<p class="msj-enviado">Mensaje enviado: ' . $cuerpo . '</p>';
+        ?> 
 
         </section> <!-- Cierra .contacto -->
+
+<!--  .................................. PHP ..................................  -->
         
         <footer>
         <section class="pie">
@@ -120,22 +108,8 @@
         </section> <!-- Cierra .pie -->
         </footer>
 
-        <script>
+        <script type="text/javascript">
  
-            function cambiarlogonav () {
-             document.getElementById('logonav').src = "images/logo-mod-nav-over.jpg";
-            }
-            function volverlogonav () {
-             document.getElementById('logonav').src = "images/logo-mod-nav.jpg";
-            }
-
-            function cambiarmenunav () {
-             document.getElementById('menunav').src = "images/menu-nav-over.jpg";
-            }
-            function volvermenunav () {
-             document.getElementById('menunav').src = "images/menu-nav.jpg";
-            }
-
             function cambiar () {
              document.getElementById('logo').src = "images/logo-mod-over.png";
             }
@@ -185,10 +159,7 @@
              document.getElementById('modpie').src = "images/logo-mod-pie.jpg";
             }
             
-            </script>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-            <script src="js/script.js"></script>
+           </script>
 
     </body>
 </html>

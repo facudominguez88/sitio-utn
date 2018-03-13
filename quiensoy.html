@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>MOD / ¿QUIÉN SOY?</title>
+        <link href="css/estilosquiensoy.css" rel="stylesheet">
+        <link href="images/favico-mod.jpg" rel="shortcut icon">
+    </head>
+
+    <body>
+
+            <div class="contenedor">
+
+                    <div class="yo">
+                        
+                        <h3>FORMACIÓN ACADÉMICA</h3>
+                        <h4>UNIVERSITARIA (2006 - 2015)</h4><br>
+                        <p>Universidad de Buenos Aires (UBA) - CABA<br>
+                           Facultad de Arquitectura, Diseño y Urbanismo (FADU)<br>
+                           <b>Título: </b>Diseñador Gráfico<br>
+                        </p>
+                        
+                        <h4>COMPLEMENTARIA (2018)</h4><br>
+                        <p>Universidad Tecnológica Nacional (UTN) - CABA<br>
+                            <b>Título: </b>Webmaster<br>
+                        </p>
+                        
+                        <h4>COMPLEMENTARIA (2007)</h4><br>
+                        <p>Instituto Argentino de Computación (IAC)<br>
+                            Gran Buenos Aires, Morón<br>
+                           <b>Título: </b>Diseñador Gráfico<br>
+                        </p>
+                        
+
+                    </div> <!-- Cierra .yo -->
+            
+                    <div class="experiencia">
+                        <h1>FACUNDO S. DOMINGUEZ</h1>
+                        <h2>DISEÑADOR GRÁFICO</h2>
+                        <img src="images/yo.jpg" alt="Facundo S. Dominguez">
+
+                        <h3>EXPERIENCIA LABORAL</h3>
+                        <h4>GRÁFICA WORK (01/06/2016 - ACTUALIDAD)</h4>
+                        <p><b>Función: </b>- Diseñador Gráfico (desarrollo <br>gráfico y diseños 
+                            adaptados a diferentes formatos: <br>tarjetas, logos, 
+                            folletos, banners, revistas, etc.)<br><br>
+                        - Armado y corte de pliegos</p>
+
+                        <h4>FREELANCE (ACTUALIDAD)</h4>
+                        <p><b>DGZ Gráfica y Piú Dolce</b><br>
+                        Venta de gráfica a través de Mercadolibre<br>
+                        y clientes particulares.<br><br>
+                        Función: - Diseño Gráfico de piezas varias</p>
+
+                    </div> <!-- Cierra .experiencia -->
+            
+                    <div class="software">
+                        <h3>SOFTWARE</h3>
+                        <div class="adobe">
+                        <img src="images/ai.jpg" alt="Illustrator">
+                        <img src="images/ps.jpg" alt="Photoshop">
+                        <img src="images/id.jpg" alt="InDesign">
+                        </div>
+                        <div class="html">
+                        <img src="images/ae.jpg" alt="After Effects">
+                        <img src="images/html.jpg" alt="HTML">
+                        <img src="images/css.jpg" alt="CSS">
+                        </div>
+                    </div> <!-- Cierra .software -->
+
+                        <section class="pie">
+                            <div class="mod" onMouseOver="cambiarmodpie();" onMouseOut="volvermodpie();">
+                            <a href="index.html">
+                                <img src="images/logo-mod-pie.jpg" id="modpie" alt="Ir a la home">
+                            </a>
+                            </div> <!-- Cierra .mod -->
+                
+                            <ul class="links">
+                                <li><a href="quiensoy.html">¿QUIÉN <br>SOY?</a></li>
+                                <li><a href="trabajos.html">TRABAJOS /<br>DISEÑOS</a></li>
+                                <li><a href="graficaeventos.html">GRÁFICA<br>EVENTOS</a></li>
+                            </ul> <!-- Cierra .links -->
+                            
+                            <div class="redes">
+                                <div class="facebook" onMouseOver="cambiarface();" onMouseOut="volverface();">
+                                <a href="https://www.facebook.com/">
+                                    <img src="images/facebookmod.jpg" id="face" alt="Ir a Facebook MOD">
+                                </a>
+                                </div>
+                                <div class="instagram" onMouseOver="cambiarinsta();" onMouseOut="volverinsta();">
+                                <a href="https://www.instagram.com/">
+                                    <img src="images/instagrammod.jpg" id="insta" alt="Ir a Instagram MOD">
+                                </a>
+                                </div>
+                            </div> <!-- Cierra .redes -->
+                
+                        </section> <!-- Cierra .pie -->
+            
+                    <script type="text/javascript">
+            
+                        function cambiarface () {
+                         document.getElementById('face').src = "images/facebookmodover.jpg";
+                        }
+                        function volverface () {
+                         document.getElementById('face').src = "images/facebookmod.jpg";
+                        }
+            
+                        function cambiarinsta () {
+                         document.getElementById('insta').src = "images/instagrammodover.jpg";
+                        }
+                        function volverinsta () {
+                         document.getElementById('insta').src = "images/instagrammod.jpg";
+                        }
+            
+                        function cambiarmodpie () {
+                         document.getElementById('modpie').src = "images/logo-mod-pie-over.jpg";
+                        }
+                        function volvermodpie () {
+                         document.getElementById('modpie').src = "images/logo-mod-pie.jpg";
+                        }
+                        
+                       </script>
+            
+            </div> <!-- Cierra .contenedor -->
+
+    </body>
+</html>

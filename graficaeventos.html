@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MOD / GRÁFICA EVENTOS</title>
+        <link href="images/favico-mod.jpg" rel="shortcut icon">
+        <link href="css/graficaeventosgaleria.css" rel="stylesheet"> <!-- css lightbox-->
+        <link href="css/estilosgraficaeventos.css" rel="stylesheet"> <!-- css sitio-->
+    </head>
+
+    <header>
+        
+        
+        
+    </header>
+
+    <body>
+        <main>
+        <div class="tarjetas">
+            <h2>TARJETAS</h2>
+            <a href = "images/graficaeventos/tarjeta1.jpg" data-lightbox = "algo" data-title = "Tarjeta 1er año"> 
+                <img src = "images/graficaeventos/thumb/tarjeta1.jpg" alt = "Tarjeta 1er año">
+            </a>
+            <a href = "images/graficaeventos/tarjeta2.jpg" data-lightbox = "algo" data-title = "Tarjeta 1er año"> 
+                <img src = "images/graficaeventos/thumb/tarjeta2.jpg" alt = "Tarjeta 1er año">
+            </a>
+            <a href = "images/graficaeventos/tarjeta3.jpg" data-lightbox = "algo" data-title = "Tarjeta pasaporte"> 
+                <img src = "images/graficaeventos/thumb/tarjeta3.jpg" alt = "Tarjeta pasaporte">
+            </a>
+            <a href = "images/graficaeventos/tarjeta4.jpg" data-lightbox = "algo" data-title = "Tarjeta ticket"> 
+                <img src = "images/graficaeventos/thumb/tarjeta4.jpg" alt = "Tarjeta ticket">
+            </a>
+            <a href = "images/graficaeventos/tarjeta5.jpg" data-lightbox = "algo" data-title = "Tarjeta kraft"> 
+                <img src = "images/graficaeventos/thumb/tarjeta5.jpg" alt = "Tarjeta kraft">
+            </a>
+        </div> <!-- Cierra .tarjetas -->
+
+        <div class="tags">
+                <h2>TAGS</h2>
+                <a href = "images/graficaeventos/tag1.jpg" data-lightbox = "algo" data-title = "Tags tickets"> 
+                    <img src = "images/graficaeventos/thumb/tag1.jpg" alt = "Tags Tickets">
+                </a>
+                <a href = "images/graficaeventos/tag2.jpg" data-lightbox = "algo" data-title = "Tags Bayres Bebidas"> 
+                    <img src = "images/graficaeventos/thumb/tag2.jpg" alt = "Tags Bayres Bebidas">
+                </a>
+                <a href = "images/graficaeventos/tag3.jpg" data-lightbox = "algo" data-title = "Tags El Rincón de Meli"> 
+                    <img src = "images/graficaeventos/thumb/tag3.jpg" alt = "Tags El Rincón de Meli">
+                </a>
+                <a href = "images/graficaeventos/tag4.jpg" data-lightbox = "algo" data-title = "Tags Pietra Showroom"> 
+                    <img src = "images/graficaeventos/thumb/tag4.jpg" alt = "Tags Pietra Showroom">
+                </a>
+                <a href = "images/graficaeventos/tag5.jpg" data-lightbox = "algo" data-title = "Tags Martina"> 
+                    <img src = "images/graficaeventos/thumb/tag5.jpg" alt = "Tags Martina">
+                </a>
+        </div> <!-- Cierra .tags -->
+
+        <div class="marcos">
+        <h2>MARCOS</h2>
+        <a href = "images/graficaeventos/marco1.jpg" data-lightbox = "algo" data-title = "Marcos Redes Sociales"> 
+            <img src = "images/graficaeventos/thumb/marco1.jpg" alt = "Marcos Redes Sociales">
+        </a>
+        <a href = "images/graficaeventos/marco2.jpg" data-lightbox = "algo" data-title = "Marco Instagram"> 
+            <img src = "images/graficaeventos/thumb/marco2.jpg" alt = "Marco Instagram">
+        </a>
+        <a href = "images/graficaeventos/marco3.jpg" data-lightbox = "algo" data-title = "Marco Instagram"> 
+            <img src = "images/graficaeventos/thumb/marco3.jpg" alt = "Marco Instagram">
+        </a>
+        <a href = "images/graficaeventos/marco4.jpg" data-lightbox = "algo" data-title = "Marco Instagram"> 
+            <img src = "images/graficaeventos/thumb/marco4.jpg" alt = "Marco Instagram">
+        </a>
+        <a href = "images/graficaeventos/marco5.jpg" data-lightbox = "algo" data-title = "Marco Instagram"> 
+            <img src = "images/graficaeventos/thumb/marco5.jpg" alt = "Marco Instagram">
+        </a>
+        </div> <!-- Cierra .marcos -->
+        </main>
+
+        <section class="pie">
+                <div class="mod" onMouseOver="cambiarmodpie();" onMouseOut="volvermodpie();">
+                <a href="index.html">
+                    <img src="images/logo-mod-pie.jpg" id="modpie" alt="Ir a la home">
+                </a>
+                </div> <!-- Cierra .mod -->
+    
+                <ul class="links">
+                    <li><a href="quiensoy.html">¿QUIÉN <br>SOY?</a></li>
+                    <li><a href="trabajos.html">TRABAJOS /<br>DISEÑOS</a></li>
+                    <li><a href="graficaeventos.html">GRÁFICA<br>EVENTOS</a></li>
+                </ul> <!-- Cierra .links -->
+                
+                <div class="redes">
+                    <div class="facebook" onMouseOver="cambiarface();" onMouseOut="volverface();">
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebookmod.jpg" id="face" alt="Ir a Facebook MOD">
+                    </a>
+                    </div>
+                    <div class="instagram" onMouseOver="cambiarinsta();" onMouseOut="volverinsta();">
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagrammod.jpg" id="insta" alt="Ir a Instagram MOD">
+                    </a>
+                    </div>
+                </div> <!-- Cierra .redes -->
+    
+            </section> <!-- Cierra .pie -->
+
+        <script type="text/javascript">
+
+            function cambiarface () {
+             document.getElementById('face').src = "images/facebookmodover.jpg";
+            }
+            function volverface () {
+             document.getElementById('face').src = "images/facebookmod.jpg";
+            }
+
+            function cambiarinsta () {
+             document.getElementById('insta').src = "images/instagrammodover.jpg";
+            }
+            function volverinsta () {
+             document.getElementById('insta').src = "images/instagrammod.jpg";
+            }
+
+            function cambiarmodpie () {
+             document.getElementById('modpie').src = "images/logo-mod-pie-over.jpg";
+            }
+            function volvermodpie () {
+             document.getElementById('modpie').src = "images/logo-mod-pie.jpg";
+            }
+            
+           </script>
+
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+    </body>
+</html>
