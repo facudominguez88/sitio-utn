@@ -1,0 +1,43 @@
+#caja{
+    position: absolute;
+    flex-grow: 1;
+    justify-content: right;
+    top: 35px;
+    right: 105px;
+    border: 2px solid rgb(198, 16, 55);
+    margin-bottom: 20px;
+    border-radius: 35px 35px 35px 35px;
+    padding: 15px 10px;
+    width: 42%;
+}
+
+#caja a {
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+#caja a:hover {
+    color: rgb(198, 16, 55);
+}
+
+
+@media screen and (max-width: 480px) {
+
+#caja {
+    max-width: 35%;
+    border: 1px solid rgb(198, 16, 55);
+    border-radius: 5px 5px 5px 5px;
+    right: 30%;
+    justify-content: space-between;
+}
+
+#caja a {
+    font-size: 0.65em;
+    font-weight: bold;
+}
+
+}

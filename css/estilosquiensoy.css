@@ -1,0 +1,186 @@
+/* estilosquiensoy */
+
+.contenedor {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(31, 27, 55);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ------------------------------ CONTENEDOR -------------------------------*/
+
+.yo, .experiencia, .software {
+    width: 33%;
+    float: left;
+    background-color: rgb(31, 27, 55);
+}
+
+.yo {
+    height: 325px;
+    border-right: 2px solid rgb(198, 16, 55);
+    margin-top: 300px;
+}
+
+.yo h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(198, 16, 55);
+    margin-top: 5px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.yo h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: -25px;
+    color: white;
+    text-align: center;
+}
+
+.yo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.experiencia img {
+    margin: 0 180px;
+    margin-bottom: 5px;
+}
+
+.experiencia h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgb(198, 16, 55);
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.experiencia h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.experiencia h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(198, 16, 55);
+    margin-top: 5px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.experiencia h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: -7px;
+    color: white;
+    text-align: center;
+}
+
+.experiencia p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.software {
+    height: 325px;
+    border-left: 2px solid rgb(198, 16, 55);
+    margin-top: 300px;
+}
+
+.software h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(198, 16, 55);
+    margin-top: 5px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.adobe {
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+.software .adobe img {
+    width: 80px;
+    margin-left: 35px;
+}
+
+.html {
+    float: left;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.software .html img {
+    width: 80px;
+    margin-left: 35px;
+}
+
+/* ------------------------------ PIE -------------------------------*/
+
+.pie {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    border-top: 3px solid  rgb(198, 16, 55);
+    justify-content: space-between;
+}
+
+.mod {
+    margin-left: 50px;
+}
+
+.links {
+    width: 45%;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.links li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(198, 16, 55);
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.links li a:hover {
+    color: white;
+}
+
+.mod img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.redes {
+    display: flex;
+    margin-right: 50px;
+
+}
+.redes img {
+    width: 75px;
+    margin: 25px 10px;
+}
