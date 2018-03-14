@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* trabajos */
 
 * {
@@ -127,4 +128,135 @@ nav h2:hover {
 .redes img {
     width: 75px;
     margin: 25px 10px;
+=======
+/* trabajos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(31, 27, 55);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 50px 225px;
+}
+
+.flexslider {
+    width: 40%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+
+nav h2 {
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color:rgb(198, 16, 55);
+    padding: 0 50px;
+}
+
+nav h2:hover {
+    color: white;
+}
+
+.descripcion {
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    width: 300px;
+    height: 400px;
+    margin-left: 15px;
+}
+
+.descripcion h2 {
+    padding-top: 20px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color:rgb(198, 16, 55);
+}
+
+.descripcion h3 {
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:rgb(31, 27, 55);
+}
+
+.descripcion p {
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:rgb(31, 27, 55);
+}
+
+/* ------------------------------ PIE -------------------------------*/
+
+.pie {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    border-top: 3px solid  rgb(198, 16, 55);
+    justify-content: space-between;
+}
+
+.mod {
+    margin-left: 50px;
+}
+
+.links {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.links li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(198, 16, 55);
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    padding: 35px 40px;
+    text-align: center;
+}
+
+.links li a:hover {
+    color: white;
+}
+
+.mod img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.redes {
+    display: flex;
+    margin-right: 50px;
+
+}
+.redes img {
+    width: 75px;
+    margin: 25px 10px;
+>>>>>>> 7dc6912e9c1919efbf3ad924e7e50a7b3c8f13e5
 }
